@@ -18,11 +18,11 @@ steps:
   inputs:
     versionSpec: '=12.0.0'
 
-- task: APIContractSecurityAudit@3
+- task: APIContractSecurityAudit@4
   displayName: Auditing OAS Files
   inputs:
     apiToken: '$(42C_API_TOKEN)'
     minScore: '70'
     platformUrl: '$(platformUrl)'
     logLevel: INFO
-    defaultCollectionName: 'Discovered APIs'
+    defaultCollectionName: 'Demo APIs v1'
