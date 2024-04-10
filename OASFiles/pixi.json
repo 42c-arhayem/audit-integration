@@ -59,7 +59,9 @@
           {
             "in": "formData",
             "name": "user",
-            "type": "string"
+            "type": "string",
+            "format": "email",
+            "pattern": "^[\\w\\-+.]+@((\\w\\-?)+\\.){1,4}[a-zA-Z0-9]{2,63}$"
           },
           {
             "in": "formData",
